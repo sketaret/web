@@ -25,5 +25,32 @@
     "api.elevenlabs.io proxy request denied with 403"
   ],
   "configuration_saved": "ELEVENLABS_API_KEY requirement and api.elevenlabs.io destination saved in environment draft; key and runtime application remain outstanding",
-  "sha256": "7cec88a9105efabb5c0b207210ea416186117ba2298e019f96d8db4b6058eafc"
+  "sha256": "44489e674b20af5143ccbd9e722b1c880251daacbe6e1167a1722ae166b60f8a",
+  "color_encoding": "limited-range BT.709",
+  "browser_color_check": {
+    "light": {
+      "source_rgb": [
+        247,
+        245,
+        241
+      ],
+      "decoded_rgb": [
+        243,
+        244,
+        239
+      ]
+    },
+    "dark": {
+      "source_rgb": [
+        16,
+        17,
+        20
+      ],
+      "decoded_rgb": [
+        13,
+        15,
+        17
+      ]
+    }
+  }
 }

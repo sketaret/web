@@ -35,7 +35,9 @@ with sync_playwright() as p,Path('/tmp/zenlix-v2-ffmpeg.log').open('w') as log:
     page.goto(args.url,wait_until='networkidle')
     page.evaluate('ZenlixFilm.ready')
     cmd=['ffmpeg','-y','-hide_banner','-loglevel','warning','-f','image2pipe','-vcodec','mjpeg','-framerate',str(fps),'-i','-',
-         '-i',str(audio),'-c:v','libx264','-preset','fast','-crf','18','-threads','3','-pix_fmt','yuv420p',
+         '-i',str(audio),'-vf','scale=in_range=full:out_range=limited:in_color_matrix=bt601:out_color_matrix=bt709,format=yuv420p',
+         '-c:v','libx264','-preset','fast','-crf','18','-threads','3','-pix_fmt','yuv420p',
+         '-color_range','tv','-colorspace','bt709','-color_primaries','bt709','-color_trc','bt709',
          '-c:a','aac','-b:a','192k','-t',str(seconds),'-movflags','+faststart',
          '-metadata','title=Zenlix V2'+(' — ElevenLabs narration' if args.with_voice else ' — visual preview, narration pending'),str(out)]
     encoder=subprocess.Popen(cmd,stdin=subprocess.PIPE,stderr=log)

@@ -44,7 +44,7 @@ def probe(path):
 def voice_is_egyptian_male(voice):
     labels=voice.get('labels') or {}
     accent=' '.join(str(v) for k,v in labels.items() if k in ('accent','language','locale'))
-    description=accent+' '+voice.get('name','')+' '+voice.get('description','')
+    description=accent+' '+str(voice.get('name') or '')+' '+str(voice.get('description') or '')
     male=str(labels.get('gender','')).lower()=='male'
     egyptian=any(t in description.lower() for t in ['egyptian','ar-eg','مصري','مصرى'])
     return male and egyptian

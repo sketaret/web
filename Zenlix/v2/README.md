@@ -44,6 +44,8 @@ python3 tools/export_storyboard.py
 
 The prepared machine has Python 3, NumPy, Python Playwright, Chromium and FFmpeg. No frontend installation or build is required. Fonts, logo and review-player styles are shared with the parent Zenlix directory. The original V1 MP4 remains unchanged.
 
+Export explicitly converts full-range browser JPEG frames to limited-range BT.709 H.264, preventing crushed shadows/washed-out light panels in browser video decoding. A rendered color probe verified the light film background within 4 RGB levels of the source after compression/decoding.
+
 ## Generate actual ElevenLabs narration after access is available
 
 ```bash
