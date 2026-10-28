@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "title": "Zenlix — الحق عميلك قبل المنافس",
+  "duration": 65,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 1950,
+  "preview_file": "zenlix-v2-visual-preview.mp4",
+  "audio": "Original music and SFX only",
+  "elevenlabs_voice_generated": false,
+  "subtitles": "Estimated draft timings",
+  "features": [
+    "Employee-attributed call rejection and timestamp",
+    "Unanswered customers and follow-up opportunity",
+    "Quality review, coaching and team development"
+  ],
+  "visual_checks": "21 distinct frames; 15 automated content/playback/failure checks passed",
+  "decode": "Complete H264/AAC decode: no errors",
+  "voice_blockers": [
+    "No callable ElevenLabs plugin",
+    "ELEVENLABS_API_KEY absent in actual runtime",
+    "api.elevenlabs.io proxy request denied with 403"
+  ],
+  "configuration_saved": "ELEVENLABS_API_KEY requirement and api.elevenlabs.io destination saved in environment draft; key and runtime application remain outstanding",
+  "sha256": "7cec88a9105efabb5c0b207210ea416186117ba2298e019f96d8db4b6058eafc"
+}

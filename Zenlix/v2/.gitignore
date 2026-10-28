@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+assets/voice-clips/
+assets/.premix-v2.wav

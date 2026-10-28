@@ -1,0 +1,6 @@
+{
+  "voiceReady": false,
+  "voiceProvider": "ElevenLabs",
+  "audioUrl": "assets/score-v2.wav",
+  "status": "Visual preview only; ElevenLabs credentials and runtime network access are missing."
+}

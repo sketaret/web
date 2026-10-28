@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "scenes": 8,
+  "visual_frames": 21,
+  "distinct_frames": 21,
+  "console_errors": [],
+  "page_errors": [],
+  "failed_requests": [],
+  "voice_over_generated": false,
+  "voice_status": "Visual preview only; ElevenLabs credentials and runtime network access are missing.",
+  "checks": [
+    "timeline partition",
+    "subtitle bounds",
+    "opening motion",
+    "all chapters",
+    "play/pause",
+    "audio seek",
+    "mute",
+    "captions",
+    "keyboard seek",
+    "end/replay",
+    "transcript feature coverage",
+    "mobile overflow",
+    "reduced motion paused",
+    "owned asset-failure message",
+    "no fake voiced-final export"
+  ]
+}

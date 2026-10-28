@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zenlix — الحق عميلك قبل المنافس</title>
+  <meta name="theme-color" content="#101114"><link rel="icon" href="../assets/zenlix-logo.png">
+  <link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="player.css">
+</head>
+<body><main>
+  <header class="page-header"><a class="brand" href="#film" aria-label="Zenlix"><img src="../assets/zenlix-logo.png" width="217" height="73" alt="Zenlix"></a><div><h1>الحق عميلك قبل المنافس.</h1><p>إعلان Zenlix · النسخة الثانية · 65 ثانية</p></div></header>
+  <section id="film" aria-label="إعلان Zenlix الجديد"><div id="screen" class="screen"><canvas id="canvas" width="1920" height="1080" tabindex="0" role="img" aria-label="إعلان عن متابعة المكالمات الملغاة واسترجاع العملاء وتقييم الفريق. التشغيل والتنقل متاحان أسفل الشاشة."></canvas><p id="loading" class="loading" role="status">جارٍ تجهيز المشاهد…</p></div>
+    <div class="transport" dir="ltr"><button id="play" class="primary" aria-label="تشغيل الإعلان"><span aria-hidden="true">▶</span><span>تشغيل</span></button><output id="time" for="seek">00:00 / 01:05</output><input id="seek" type="range" min="0" max="65" step="0.01" value="0" aria-label="موضع تشغيل الإعلان بالثواني"><button id="sound" aria-pressed="false" aria-label="كتم الصوت">صوت</button><button id="captions" aria-pressed="true" aria-label="إخفاء نص التعليق">CC</button><button id="fullscreen" aria-label="ملء الشاشة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3H3v6m12-6h6v6M3 15v6h6m6 0h6v-6"/></svg></button></div>
+    <p id="status" class="status" role="status">معاينة المونتاج بالموسيقى والمؤثرات · تسجيل ElevenLabs قيد التجهيز · الواجهات توضيحية</p>
+  </section>
+  <nav class="chapters" id="chapters" aria-label="مشاهد الإعلان"></nav>
+  <section class="delivery"><div><h2>اعرف مين. الحق عميلك. طوّر فريقك.</h2><p>المميزات الأساسية في قلب الإعلان من أول ثانية.</p></div><a id="download" class="download" href="exports/zenlix-v2-visual-preview.mp4" download>تحميل معاينة المونتاج MP4<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 7v11h11"/></svg></a></section>
+  <details><summary>التعليق المصري الجديد وتوقيتاته <span aria-hidden="true">＋</span></summary><div id="script" class="script"></div></details>
+  <footer><span>ZENLIX SOLUTIONS</span><div><a href="exports/narration-ar-v2.txt" download>نص التسجيل</a><a href="exports/zenlix-v2-ar-draft.srt" download>نصوص المعاينة SRT</a></div><span dir="ltr">Every Call, Under Control.</span></footer>
+</main><audio id="audio" preload="auto"></audio><script src="film.js"></script><script src="player.js"></script></body></html>
