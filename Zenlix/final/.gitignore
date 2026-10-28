@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+assets/score-v2.wav
+assets/final-mix.wav
+assets/voice-original.wav
+assets/premix.wav

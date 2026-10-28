@@ -1,0 +1,47 @@
+{
+  "result": "PASS",
+  "duration_seconds": 69.12,
+  "video_frames": 1728,
+  "fps": 25,
+  "resolution": "1920x1080",
+  "codec": "H.264 / AAC",
+  "av_duration_difference_seconds": 0,
+  "full_decode": "PASS",
+  "encoded_voice_offsets": [
+    {
+      "at_seconds": 1,
+      "offset_ms": 0.0,
+      "correlation": 0.992526
+    },
+    {
+      "at_seconds": 15,
+      "offset_ms": 0.0,
+      "correlation": 0.999744
+    },
+    {
+      "at_seconds": 30,
+      "offset_ms": 0.0,
+      "correlation": 0.999561
+    },
+    {
+      "at_seconds": 45,
+      "offset_ms": 0.0,
+      "correlation": 0.999597
+    },
+    {
+      "at_seconds": 67,
+      "offset_ms": 0.0,
+      "correlation": 0.999768
+    }
+  ],
+  "page_errors": [],
+  "browser_checks": [
+    "all eight chapters",
+    "ending and replay",
+    "mobile overflow",
+    "encoded MP4 seek/play"
+  ],
+  "word_level_transcript_verified": false,
+  "file_bytes": 5469927,
+  "sha256": "9abbaa96ae2a28fa1992129c6f4fa8a1d4a577756b228329253c4a7e096bbd81"
+}
