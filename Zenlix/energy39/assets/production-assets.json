@@ -1,0 +1,19 @@
+{
+  "logo": {
+    "authenticReady": false,
+    "lightBackground": null,
+    "darkBackground": null
+  },
+  "screens": {
+    "missedCalls": null,
+    "teamQuality": null,
+    "customerHistory": null
+  },
+  "voice": {
+    "ready": false,
+    "source": null,
+    "mix": null,
+    "provider": null
+  },
+  "note": "Original logo, real software media and new narration were not attached to this revision. Concept motion plates are clearly review-only."
+}

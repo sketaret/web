@@ -1,0 +1,229 @@
+{
+  "duration": 39,
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "bpm": 128,
+  "locale": "ar-EG",
+  "scenes": [
+    {
+      "id": 1,
+      "start": 0,
+      "end": 7,
+      "kind": "hook",
+      "name": "رنّة من غير رد",
+      "draftVoice": "كل رنّة من غير رد… ممكن تكون أوردر ضايع."
+    },
+    {
+      "id": 2,
+      "start": 7,
+      "end": 10,
+      "kind": "competitor",
+      "name": "عميلك ممكن يختار غيرك",
+      "draftVoice": "وعميلك ممكن يختار غيرك."
+    },
+    {
+      "id": 3,
+      "start": 10,
+      "end": 16,
+      "kind": "follow-up",
+      "name": "تابع الفرصة",
+      "draftVoice": "مع زِنليكس سوليوشنز، تابع المكالمات الفائتة، وارجع لعميلك."
+    },
+    {
+      "id": 4,
+      "start": 16,
+      "end": 22,
+      "kind": "team",
+      "name": "قيّم ودرّب فريقك",
+      "draftVoice": "اعرف أداء فريقك، قيّم الجودة، ودرّب اللي محتاج يتطوّر."
+    },
+    {
+      "id": 5,
+      "start": 22,
+      "end": 31,
+      "kind": "crm",
+      "name": "فاكرين تفاصيله",
+      "draftVoice": "ولو عميل اشتكى قبل كده، افتح ملفه وراجع الشكوى… عشان يحس إنك فاكره، من غير ما يعيد الحكاية."
+    },
+    {
+      "id": 6,
+      "start": 31,
+      "end": 37,
+      "kind": "benefits",
+      "name": "فرصك وفريقك وعميلك",
+      "draftVoice": "متابعة فرصك. فريق أقوى. اهتمام بكل عميل."
+    },
+    {
+      "id": 7,
+      "start": 37,
+      "end": 39,
+      "kind": "closing",
+      "name": "كل مكالمة ليها قيمة",
+      "draftVoice": "كل مكالمة ليها قيمة."
+    }
+  ],
+  "editCues": [
+    {
+      "t": 0,
+      "kind": "ring"
+    },
+    {
+      "t": 0.46875,
+      "kind": "pulse"
+    },
+    {
+      "t": 0.9375,
+      "kind": "draw"
+    },
+    {
+      "t": 1.40625,
+      "kind": "whip"
+    },
+    {
+      "t": 2.34375,
+      "kind": "click"
+    },
+    {
+      "t": 3.28125,
+      "kind": "freeze"
+    },
+    {
+      "t": 4.21875,
+      "kind": "whip"
+    },
+    {
+      "t": 5.15625,
+      "kind": "loss"
+    },
+    {
+      "t": 6.09375,
+      "kind": "draw"
+    },
+    {
+      "t": 7,
+      "kind": "match"
+    },
+    {
+      "t": 7.9375,
+      "kind": "click"
+    },
+    {
+      "t": 8.875,
+      "kind": "transfer"
+    },
+    {
+      "t": 10,
+      "kind": "reverse"
+    },
+    {
+      "t": 10.9375,
+      "kind": "draw"
+    },
+    {
+      "t": 11.875,
+      "kind": "reveal"
+    },
+    {
+      "t": 12.8125,
+      "kind": "click"
+    },
+    {
+      "t": 13.75,
+      "kind": "callback"
+    },
+    {
+      "t": 14.6875,
+      "kind": "chime"
+    },
+    {
+      "t": 15.625,
+      "kind": "morph"
+    },
+    {
+      "t": 16,
+      "kind": "match"
+    },
+    {
+      "t": 16.9375,
+      "kind": "draw"
+    },
+    {
+      "t": 17.875,
+      "kind": "click"
+    },
+    {
+      "t": 18.8125,
+      "kind": "whip"
+    },
+    {
+      "t": 19.75,
+      "kind": "coaching"
+    },
+    {
+      "t": 20.6875,
+      "kind": "chime"
+    },
+    {
+      "t": 21.625,
+      "kind": "morph"
+    },
+    {
+      "t": 22,
+      "kind": "match"
+    },
+    {
+      "t": 23.40625,
+      "kind": "click"
+    },
+    {
+      "t": 24.8125,
+      "kind": "manual-open"
+    },
+    {
+      "t": 26.21875,
+      "kind": "history"
+    },
+    {
+      "t": 27.625,
+      "kind": "click"
+    },
+    {
+      "t": 29.03125,
+      "kind": "reassure"
+    },
+    {
+      "t": 30.4375,
+      "kind": "draw"
+    },
+    {
+      "t": 31,
+      "kind": "match"
+    },
+    {
+      "t": 32.5,
+      "kind": "benefit"
+    },
+    {
+      "t": 34,
+      "kind": "benefit"
+    },
+    {
+      "t": 35.5,
+      "kind": "ecosystem"
+    },
+    {
+      "t": 37,
+      "kind": "brand"
+    },
+    {
+      "t": 37.46875,
+      "kind": "reveal"
+    }
+  ],
+  "audioStatus": "new_voice_pending",
+  "originalLogoStatus": "pending",
+  "realSoftwareUIStatus": "pending",
+  "crmManualOpenAt": 24.8125,
+  "crmHistoryVisibleAt": 26.21875
+}

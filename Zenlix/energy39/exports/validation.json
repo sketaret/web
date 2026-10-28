@@ -1,0 +1,46 @@
+{
+  "result": "PASS",
+  "duration_seconds": 39,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "aspect_ratio": "9:16",
+  "fps": 30,
+  "frames": 1170,
+  "music_bpm": 128,
+  "audio": "Original music and SFX only; new narration pending.",
+  "original_logo": "Pending; plain review typography only",
+  "real_software_ui": "Pending; conceptual motion plates only",
+  "final_export_gate": "Correctly blocked pending actual assets",
+  "distinct_frames": 36,
+  "manual_crm_open_before_history": true,
+  "receipt_match_cuts": [
+    {
+      "cut_seconds": 7,
+      "receipt_mean_pixel_difference": 0
+    },
+    {
+      "cut_seconds": 10,
+      "receipt_mean_pixel_difference": 0
+    }
+  ],
+  "freeze_frame": "PASS",
+  "full_decode": "PASS",
+  "browser_checks": [
+    "all chapters",
+    "play/pause",
+    "mute",
+    "keyboard seek",
+    "end/replay",
+    "mobile overflow",
+    "reduced motion",
+    "missing-timeline error",
+    "actual MP4 seek/play"
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "failed_requests": [],
+  "bytes": 3479250,
+  "sha256": "d3bb41baf8490ac4719d32ac2265cf0880c71136af36f25c0ebd32a253b0f13a"
+}
