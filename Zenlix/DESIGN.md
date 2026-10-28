@@ -61,3 +61,9 @@ One deterministic render(time, captions) function drives playback and video fram
 
 ## Do's and Don'ts
 V1 retains 0–8–17–26–33–45–55–60–65. V2 uses 0–6–12–23–36–49–57–60–65, making the brand visible earlier and giving the three user-prioritized features full sequences. Do not claim illustrative dashboard values are real, customer recovery is guaranteed, or evaluation uses automatic AI grading. Do not claim a music/SFX preview contains an Egyptian narrator. Generated voice requires real provider audio; precise timing is measurable but 100% subjective pronunciation quality cannot be guaranteed. The logo asset is derived from supplied references and should be replaced by the original production PNG/SVG when provided as a file.
+
+## Authorized vertical whiteboard direction
+
+The new user brief explicitly changes the creative direction for `whiteboard/`: 1080×1920 portrait, white paper, fine navy outlines (#162B42), vivid brand orange (#FF821C), Cairo text and consistently illustrated adult characters. This is a separate film with a light review player; previous landscape films and their palette remain intact. Its signature is one orange pen path connecting the lost call, follow-up, coaching, complaint history and customer trust. Qualitative indicators replace invented performance numbers. No stock footage or photorealistic people are used.
+
+The authentic logo requirement is stricter than the earlier drafts: do not use the regenerated parent logo. Gate original-asset rendering through `whiteboard/assets/brand-status.json`. Plain brand-name typography is disclosed as a review placeholder. The new scene descriptions do not contain a verbatim supplied narration script; `whiteboard/exports/narration-proposed-ar.txt` remains a proposal. Do not recycle the previous narration, claim word-level synchronization or label the music/SFX review a finished voiced commercial. Final shot durations must follow the actual new recording.
