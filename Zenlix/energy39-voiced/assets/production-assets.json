@@ -1,0 +1,19 @@
+{
+  "logo": {
+    "authenticReady": false,
+    "lightBackground": null,
+    "darkBackground": null
+  },
+  "screens": {
+    "missedCalls": null,
+    "teamQuality": null,
+    "customerHistory": null
+  },
+  "voice": {
+    "ready": true,
+    "source": "assets/narration-upload.mp3",
+    "mix": "assets/final-mix.wav",
+    "provider": "User-supplied recording; provider not independently verified"
+  },
+  "note": "Uploaded narration mixed at original speed. Original logo and real UI remain pending."
+}

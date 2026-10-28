@@ -230,18 +230,24 @@ function ecosystem(t){
  }
 }
 function closing(t){
- bg(C.navy);const p=ease(t/.45);
+ bg(C.navy);const p=ease(t/.45),spoken=config.closingVoiceCues;
  for(let i=0;i<3;i++){const origin=[[269,835],[812,835],[540,1360]][i];const endX=lerp(origin[0],540,p),endY=lerp(origin[1],899,p);g.save();g.globalAlpha*=1-p;ellipse(endX,endY,112*(1-p)+10,112*(1-p)+10,null,C.orange,4);g.restore();}
- const img=logos.dark;g.save();g.globalAlpha*=ease((t-.13)/.45);
+ const img=logos.dark;g.save();g.globalAlpha*=spoken?ease((activeTime-spoken.brandAt)/.35):ease((t-.13)/.45);
  if(img){const w=817,h=w*img.height/img.width;g.shadowColor='#FF821C55';g.shadowBlur=26;g.drawImage(img,540-w/2,809-h/2,w,h);g.shadowBlur=0;}
  else{text('Zenlix',540,767,142,C.paper,800,'center','ltr');text('SOLUTIONS',540,883,38,C.paper,800,'center','ltr');}
  g.restore();
- appear(t,.35,()=>text('كل مكالمة ليها قيمة',540,1110,64,C.paper,800),{duration:.4,y:12});
- shape('M321 1220Q540 1249 759 1220',null,C.orange,5,ease((t-.4)/.48));
- appear(t,.6,()=>text('zenlix.org',540,1333,46,C.orange,700,'center','ltr'),{duration:.35,y:10});
+ const taglineTime=spoken?activeTime-spoken.taglineAt+.35:t,websiteTime=spoken?activeTime-spoken.websiteAt+.6:t;
+ appear(taglineTime,.35,()=>text('كل مكالمة ليها قيمة',540,1110,64,C.paper,800),{duration:.4,y:12});
+ shape('M321 1220Q540 1249 759 1220',null,C.orange,5,ease((taglineTime-.4)/.48));
+ appear(websiteTime,.6,()=>text('zenlix.org',540,1333,46,C.orange,700,'center','ltr'),{duration:.35,y:10});
 }
 const renderers=[orderHook,competitor,followUp,team,crm,ecosystem,closing];
-function render(time){if(!config)return 0;const t=clamp(time,0,config.duration-.001);activeTime=t;const i=scenes.findIndex(s=>t<s.end),local=t-scenes[i].start;g.resetTransform();g.globalAlpha=1;g.clearRect(0,0,W,H);renderers[i](local);return i;}
+function sceneTime(scene,local){
+ const points=scene.timeMap;if(!points)return local;
+ for(let i=1;i<points.length;i++){const [a,ca]=points[i-1],[b,cb]=points[i];if(local<=b)return lerp(ca,cb,clamp((local-a)/(b-a)));}
+ return points[points.length-1][1];
+}
+function render(time){if(!config)return 0;const t=clamp(time,0,config.duration-.001);activeTime=t;const i=scenes.findIndex(s=>t<s.end),local=sceneTime(scenes[i],t-scenes[i].start);g.resetTransform();g.globalAlpha=1;g.clearRect(0,0,W,H);renderers[i](local);return i;}
 async function load(){const [cfg,manifest]=await Promise.all([fetch('timeline.json').then(r=>{if(!r.ok)throw new Error('Timeline missing');return r.json()}),fetch('assets/production-assets.json').then(r=>{if(!r.ok)throw new Error('Asset manifest missing');return r.json()})]);config=cfg;assets=manifest;scenes=cfg.scenes;
  await Promise.all([document.fonts.load('800 90px Cairo','كل مكالمة ليها قيمة'),document.fonts.load('700 36px Cairo','متابعة العملاء'),document.fonts.load('400 25px Cairo','تفاصيل'),document.fonts.load('800 60px Cairo','Zenlix')]);
  if(assets.logo.authenticReady){for(const [key,src] of [['light',assets.logo.lightBackground],['dark',assets.logo.darkBackground]]){if(!src)throw new Error('Original logo variant missing');const img=new Image();img.src=src;await img.decode();logos[key]=img;}}

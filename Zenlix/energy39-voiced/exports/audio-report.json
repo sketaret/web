@@ -1,0 +1,14 @@
+{
+  "source": "User-uploaded content (1).mp3",
+  "provider": "Not independently verified",
+  "source_sha256": "f2f2c978887ea84154b5f53a332e3b8385c2ae2da8b0aadf192d8b76a31013db",
+  "decoded_voice_seconds": 34.16,
+  "voice_start_seconds": 0,
+  "source_preserved_in_full": true,
+  "speech_speed": 1.0,
+  "pitch_changed": false,
+  "output_seconds": 39,
+  "music_tail_seconds": 4.840000000000003,
+  "music_bpm": 128,
+  "mix": "Sidechain ducking and two-pass -16 LUFS / -1.8 dBTP normalization"
+}

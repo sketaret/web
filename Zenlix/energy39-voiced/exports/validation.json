@@ -1,0 +1,87 @@
+{
+  "result": "PASS",
+  "duration_seconds": 39,
+  "voice_seconds": 34.16,
+  "music_tail_seconds": 4.84,
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "fps": 30,
+  "frames": 1170,
+  "source_voice_preserved_in_full": true,
+  "speech_speed": 1,
+  "pitch_changed": false,
+  "encoded_voice_offset_checks": [
+    {
+      "at_seconds": 1,
+      "offset_ms": 0.0,
+      "correlation": 0.999853
+    },
+    {
+      "at_seconds": 7,
+      "offset_ms": 0.0,
+      "correlation": 0.996201
+    },
+    {
+      "at_seconds": 12,
+      "offset_ms": 0.0,
+      "correlation": 0.999799
+    },
+    {
+      "at_seconds": 17,
+      "offset_ms": 0.0,
+      "correlation": 0.999079
+    },
+    {
+      "at_seconds": 22,
+      "offset_ms": 0.0,
+      "correlation": 0.999563
+    },
+    {
+      "at_seconds": 27,
+      "offset_ms": 0.0,
+      "correlation": 0.999149
+    },
+    {
+      "at_seconds": 31,
+      "offset_ms": 0.0,
+      "correlation": 0.999737
+    },
+    {
+      "at_seconds": 33,
+      "offset_ms": 0.0,
+      "correlation": 0.99974
+    }
+  ],
+  "scene_cuts_seconds": [
+    0,
+    6.766666667,
+    9.233333333,
+    15.4,
+    20.5,
+    26.1,
+    30.8
+  ],
+  "retimed_actions": [
+    "opening conflict",
+    "follow-up",
+    "manual CRM opening",
+    "complaint history",
+    "spoken closing tagline"
+  ],
+  "full_decode": "PASS",
+  "browser_checks": [
+    "chapters",
+    "play/pause",
+    "audio seeking",
+    "ending",
+    "mobile overflow",
+    "encoded MP4 playback"
+  ],
+  "original_logo_and_real_ui": "Still pending; no fabricated production assets added",
+  "page_errors": [],
+  "console_errors": [],
+  "bytes": 3248855,
+  "sha256": "632b27c81dc59df9d01d20d6e852f8c5fb81f3b7b060bf9bc770fc4d7a0a1522"
+}

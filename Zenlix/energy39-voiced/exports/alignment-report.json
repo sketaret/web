@@ -1,0 +1,209 @@
+{
+  "source_sha256": "f2f2c978887ea84154b5f53a332e3b8385c2ae2da8b0aadf192d8b76a31013db",
+  "method": "Local Whisper small/base ASR-assisted phrase identification and measured recording pauses; no burned-in word captions.",
+  "asr_model": "OpenAI Whisper small/base via official Sherpa-ONNX models, processed locally",
+  "source_model_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-small.tar.bz2",
+  "notes": "ASR estimates guide scene/phrase timing; they do not certify every word or provide human auditory review.",
+  "cut_seconds": [
+    0,
+    6.766666667,
+    9.233333333,
+    15.4,
+    20.5,
+    26.1,
+    30.8
+  ],
+  "manual_crm_open_seconds": 23.133333,
+  "history_visible_seconds": 24.266667,
+  "spoken_tagline_onset_seconds": 32.3,
+  "voice_duration_seconds": 34.16,
+  "video_duration_seconds": 39,
+  "frame_quantization_max_seconds": 0.016666666666666666,
+  "voice_speed": 1,
+  "voice_start_offset_seconds": 0,
+  "maps": [
+    {
+      "scene": "hook",
+      "actual_to_canonical": [
+        [
+          0,
+          0
+        ],
+        [
+          2.033333333333333,
+          1.40625
+        ],
+        [
+          3.5,
+          3.28125
+        ],
+        [
+          4.9,
+          4.21875
+        ],
+        [
+          6.0,
+          6.09375
+        ],
+        [
+          6.766666666666667,
+          7
+        ]
+      ]
+    },
+    {
+      "scene": "competitor",
+      "actual_to_canonical": [
+        [
+          6.766666666666667,
+          0
+        ],
+        [
+          9.233333333333333,
+          3
+        ]
+      ]
+    },
+    {
+      "scene": "follow-up",
+      "actual_to_canonical": [
+        [
+          9.233333333333333,
+          0
+        ],
+        [
+          11.633333333333333,
+          1.875
+        ],
+        [
+          12.466666666666667,
+          2.8125
+        ],
+        [
+          13.333333333333334,
+          3.75
+        ],
+        [
+          14.533333333333333,
+          4.6875
+        ],
+        [
+          15.033333333333333,
+          5.625
+        ],
+        [
+          15.4,
+          6
+        ]
+      ]
+    },
+    {
+      "scene": "team",
+      "actual_to_canonical": [
+        [
+          15.4,
+          0
+        ],
+        [
+          15.666666666666666,
+          0.52
+        ],
+        [
+          17.7,
+          2.8125
+        ],
+        [
+          19.8,
+          4.6875
+        ],
+        [
+          20.166666666666668,
+          5.625
+        ],
+        [
+          20.5,
+          6
+        ]
+      ]
+    },
+    {
+      "scene": "crm",
+      "actual_to_canonical": [
+        [
+          20.5,
+          0
+        ],
+        [
+          21.9,
+          2.34375
+        ],
+        [
+          23.133333333333333,
+          2.8125
+        ],
+        [
+          24.266666666666666,
+          4.21875
+        ],
+        [
+          25.5,
+          7.03125
+        ],
+        [
+          26.1,
+          9
+        ]
+      ]
+    },
+    {
+      "scene": "benefits",
+      "actual_to_canonical": [
+        [
+          26.1,
+          0
+        ],
+        [
+          27.8,
+          1.5
+        ],
+        [
+          29.166666666666668,
+          3
+        ],
+        [
+          30.0,
+          4.5
+        ],
+        [
+          30.8,
+          6
+        ]
+      ]
+    },
+    {
+      "scene": "closing",
+      "actual_to_canonical": [
+        [
+          30.8,
+          0
+        ],
+        [
+          31.5,
+          0.65
+        ],
+        [
+          32.3,
+          1.1
+        ],
+        [
+          34.16,
+          2
+        ],
+        [
+          39,
+          2
+        ]
+      ]
+    }
+  ]
+}
